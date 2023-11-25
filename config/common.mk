@@ -6,6 +6,7 @@ $(call inherit-product-if-exists, vendor/certification/config.mk)
 
 # Pixel additions
 ifeq ($(WITH_GMS),true)
+$(call inherit-product, vendor/pixel-framework/config.mk)
 $(call inherit-product, vendor/pixel-style/config/common.mk)
 endif
 
