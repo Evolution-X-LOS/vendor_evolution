@@ -256,10 +256,7 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     dalvik.vm.systemuicompilerfilter=speed
 
 # SetupWizard
-ifeq ($(WITH_GMS),true)
-PRODUCT_PRODUCT_PROPERTIES += \
-    setupwizard.theme=glif_v3_light
-else
+ifeq ($(WITH_GMS),false)
 PRODUCT_PRODUCT_PROPERTIES += \
     setupwizard.theme=glif_v4 \
     setupwizard.feature.day_night_mode_enabled=true
